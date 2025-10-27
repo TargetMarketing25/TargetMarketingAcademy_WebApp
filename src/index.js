@@ -1,10 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+body {
+  @apply bg-dark text-white font-sans overflow-x-hidden;
+}
